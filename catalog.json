@@ -1,0 +1,11 @@
+{
+  "schema": "design-parity-catalog/v1",
+  "system": "kobento",
+  "title": "Kobento",
+  "library": [
+    "Kobento component library (mcp.kobento.dev)"
+  ],
+  "generatedAt": "2026-11-24T21:13:23Z",
+  "components": [],
+  "uiBuilderFile": "ui-builder.json"
+}

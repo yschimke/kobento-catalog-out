@@ -1,0 +1,26 @@
+Kobento component definitions and theme
+
+definitions.json and theme.json in this directory are derived from Kobento
+(https://mcp.kobento.dev/, https://github.com/kobento), an independent
+implementation of RemoteCompose, licensed under the Apache License, Version 2.0
+(LICENSE in this directory).
+
+They were taken from Kobento's MCP server by generator/snapshot.py fetch:
+definitions.json from `get {name, definition: true}` for each library component,
+keeping each definition's structure (params, slots, locals, body) and dropping its
+summary, documentation, pitfalls and example call; theme.json from Kobento's own
+expansion of a probe document, which reads back every theme number and colour the
+definitions use, in each look.
+
+json2rc.mjs is Kobento's JSON to .rc converter (kobento-tools' json2rc), bundled
+into one browser module by generator/build-json2rc.sh from the kobento-tools
+commit named in its first line, so an editor can compile an expanded design.
+
+icons/ (published beside these files, not committed) holds Material Symbols
+(https://fonts.google.com/icons), Copyright Google LLC, licensed under the Apache
+License, Version 2.0: the 24px symbols' SVG paths from
+google/material-design-icons at the commit generator/icons.py names, regrouped
+by generator/icons.py into one JSON file per style and first letter.
+
+Kobento is not affiliated with Google, and neither Kobento nor Google endorses
+this repository.
